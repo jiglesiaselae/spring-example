@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reload-example
+data:
+  application.properties: |-
+    bean.message=Hello World 22222 !!!!
