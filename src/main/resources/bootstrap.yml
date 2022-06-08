@@ -4,7 +4,7 @@ spring:
       config:
         enabled: true
         sources:
-          - namespace: default
+          - namespace: example-openshift2
             name: example-openshift2
       reload:
         enabled: true
