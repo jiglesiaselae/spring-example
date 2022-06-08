@@ -1,21 +1,19 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
+        sources:
+          - namespace: default
+            name: example-openshift2
+      reload:
+        enabled: true
+        mode: event
+        strategy: refresh
+
 management:
   endpoint:
     restart.enabled : true
     health.enabled : true
     info.enabled : true
 
-spring:
-  application:
-    name: example-openshift2
-  cloud:
-    kubernetes:
-      reload:
-        period: 1000
-        enabled: true
-      config:
-        enabled: true
-        name: k8config
-        namespace: default
-        sources:
-         # Spring Cloud Kubernetes looks up a ConfigMap named myk8config in namespace default
-         - name: myk8config
