@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-openshift2
+data:
+  application.properties: |-
+    bean.message=Hello World 22222 !!!!
